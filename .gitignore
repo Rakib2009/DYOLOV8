@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# Ultralytics training artifacts
+runs/
+yolov8*.pt
+yolo11*.pt
+
+# OS
+.DS_Store
+
+# Data (commit data.yaml and a small sample if useful, but not full datasets)
+data/train/
+data/valid/
+data/test/
+
+# Local samples (keep .gitkeep)
+samples/*
+!samples/.gitkeep
+
+# Models — keep the final best.pt but ignore intermediate checkpoints
+models/*.pt
+!models/best.pt
